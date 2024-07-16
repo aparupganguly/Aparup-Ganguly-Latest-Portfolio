@@ -1,0 +1,71 @@
+.HeroContianer {
+  font-family: var(--primaryRegularFont);
+  font-size: 1.1em;
+  color: #535353;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 30vh;
+}
+.HeroContianer p {
+  cursor: pointer;
+}
+.leftHeroText {
+  line-height: 0.75;
+}
+.mobileBioText {
+  display: none;
+}
+
+.bioText {
+  width: 15em;
+  text-align: right;
+  line-height: 1.4;
+  font-size: 0.9em;
+  font-family: var(--secondaryRegularFont);
+}
+.showReelContainer {
+  display: flex;
+  justify-content: center;
+}
+.showReelContainer video {
+  height: 45vh;
+}
+/* BreakPoints */
+@media screen and (max-width: 1024px) {
+  .HeroContianer {
+    margin-bottom: 3em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .leftHeroText {
+    line-height: 1.2;
+  }
+
+  .rightHeroContainer {
+    display: none;
+  }
+  .bioText {
+    text-align: center;
+  }
+  .showReelContainer video {
+    height: 45vh;
+  }
+  .mobileBioText {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-right: 30px;
+    font-family: var(--secondaryRegularFont);
+    margin-top: 1em;
+  }
+  .mobileBioText p {
+    font-size: 0.9em;
+    color: var(--textSecondary);
+    line-height: 1.2;
+  }
+  .HeroContianer {
+    margin-bottom: 0;
+  }
+}
+/* BreakPoints */

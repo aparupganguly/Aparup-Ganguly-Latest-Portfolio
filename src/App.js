@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
+import LandingPage from "./Pages/LandingPage";
+import Hero from "./Components/Hero";
+import ShowReel from "./assets/Videos/demoShowreel.mp4";
+const App = () => {
+  const lenis = useLenis(({ scroll }) => {});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ReactLenis root>
+        <LandingPage />
+      </ReactLenis>
+    </>
   );
-}
+};
 
 export default App;

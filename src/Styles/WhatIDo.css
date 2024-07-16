@@ -1,0 +1,9 @@
+.whatIdoContianer {
+  height: 60vh;
+  font-family: var(--secondaryRegularFont);
+}
+.whatIdoImgContianer img {
+  height: 10em;
+  
+  padding : 1em;
+}

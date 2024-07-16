@@ -1,0 +1,15 @@
+.aboutContianer {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutCard {
+  height: 70vh;
+  background-color: rgb(123, 123, 123);
+}
+
+.aboutCard img{
+  height: 70vh;
+}
