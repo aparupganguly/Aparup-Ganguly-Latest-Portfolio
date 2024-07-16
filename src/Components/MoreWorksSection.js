@@ -1,22 +1,31 @@
 import React from "react";
 import "../Styles/Works.css";
 import "../Styles/MoreWorksSection.css";
+import img1 from "../assets/Images/MOREWORKS/wall.png";
+import img2 from "../assets/Images/MOREWORKS/array.png";
+import img3 from "../assets/Images/MOREWORKS/cb.png";
+import img4 from "../assets/Images/MOREWORKS/dd.png";
+import img5 from "../assets/Images/MOREWORKS/go.png";
+import img6 from "../assets/Images/MOREWORKS/rabbit.png";
+import img7 from "../assets/Images/MOREWORKS/so.png";
+import img8 from "../assets/Images/MOREWORKS/teenage.png";
+import img9 from "../assets/Images/MOREWORKS/teenagePack.png";
+import img10 from "../assets/Images/MOREWORKS/icon.jpeg";
+import img11 from "../assets/Images/MOREWORKS/kol.png";
 
 const MoreWorksSection = () => {
   const images = [
-    "https://i.pinimg.com/564x/1a/2e/64/1a2e64ec22fc678e40e06a79f637614c.jpg",
-    "https://i.pinimg.com/564x/49/f9/cb/49f9cbdf84e2ec3f685e41dde6fc2da1.jpg",
-    "https://i.pinimg.com/564x/1a/2e/64/1a2e64ec22fc678e40e06a79f637614c.jpg",
-    "https://i.pinimg.com/564x/49/f9/cb/49f9cbdf84e2ec3f685e41dde6fc2da1.jpg",
-    "https://i.pinimg.com/564x/1a/2e/64/1a2e64ec22fc678e40e06a79f637614c.jpg",
-    "https://i.pinimg.com/564x/49/f9/cb/49f9cbdf84e2ec3f685e41dde6fc2da1.jpg",
-    "https://i.pinimg.com/564x/1a/2e/64/1a2e64ec22fc678e40e06a79f637614c.jpg",
-    "https://i.pinimg.com/564x/49/f9/cb/49f9cbdf84e2ec3f685e41dde6fc2da1.jpg",
-    "https://i.pinimg.com/564x/1a/2e/64/1a2e64ec22fc678e40e06a79f637614c.jpg",
-    "https://i.pinimg.com/564x/49/f9/cb/49f9cbdf84e2ec3f685e41dde6fc2da1.jpg",
-    "https://i.pinimg.com/564x/1a/2e/64/1a2e64ec22fc678e40e06a79f637614c.jpg",
-    "https://i.pinimg.com/564x/49/f9/cb/49f9cbdf84e2ec3f685e41dde6fc2da1.jpg",
-    "https://i.pinimg.com/564x/1a/2e/64/1a2e64ec22fc678e40e06a79f637614c.jpg",
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
   ];
 
   return (
