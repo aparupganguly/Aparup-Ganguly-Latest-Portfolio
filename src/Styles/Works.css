@@ -3,38 +3,39 @@
   color: var(--textPrimary);
   font-size: 2.5em;
   width: 8em;
-  padding-top: 0.5em;
-}
-.workFirstRow,
-.workSecondRow {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 5em;
-  gap: 10em;
-}
-.worksContianer img {
-  width: 54em;
-  height: 36vh;
 }
 
-@media screen and (max-width: 1024px) {
-  .worksContianer img {
-    height: 11vh;
-  }
-}
-@media screen and (max-width: 500px) {
-  .worksContianer img {
-    height: 10vh;
-  }
-  .workFirstRow,
-  .workSecondRow {
-    gap: 1.2em;
-    padding-top: 0.1em;
-    padding-bottom: 1em;
-
-    padding-right: 30px;
-  }
-}
 .workMainContainer {
-  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  height: 80vh;
+  
+}
+
+.worksContainer img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .worksContainer img {
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .workMainContainer {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    padding-right:30px ; /* Single column layout on very small screens */
+  }
+  .worksContainer img {
+    height: auto; /* Adjust height for smaller screens */
+  }
 }
