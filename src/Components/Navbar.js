@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { Expo } from "gsap/all";
+import { Link } from "react-router-dom";
 
 import "../Styles/Navbar.css";
 
@@ -64,10 +65,18 @@ const Navbar = () => {
           <span></span>
         </div>
         <div className="navLinks">
-          <p>Tech I know</p>
-          <p>Products</p>
-          <p>Works</p>
-          <p>Connect</p>
+          <Link to="/tech" style={{ textDecoration: "none" }}>
+            <p>Tech I know</p>
+          </Link>
+          <Link to="/products" style={{textDecoration: "none" }}>
+            <p>Products</p>
+          </Link>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <p>Works</p>
+          </Link>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <p>Connect</p>
+          </Link>
         </div>
       </div>
     </>

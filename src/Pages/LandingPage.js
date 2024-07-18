@@ -32,7 +32,7 @@ const LandingPage = () => {
       <MoreWorksSection />
       {/* <ProductSection /> */}
       <AboutMe />
-      <WhatIDo />
+      {/* <WhatIDo /> */}
       <Connect />
     </div>
   );

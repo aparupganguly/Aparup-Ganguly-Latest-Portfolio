@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
         <div className="rightHeroContainer">
           <p className="bioText">
-            Hi I'm Aparup Ganguly, I create cool stuff online!
+            Hi I'm Aparup Ganguly, creating minimalistic tech and digital products to elevate your lifestyle and experience.
           </p>
         </div>
       </div>

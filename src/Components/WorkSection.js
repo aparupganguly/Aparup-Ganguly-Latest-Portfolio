@@ -25,16 +25,29 @@ const WorkSection = () => {
       });
 
       tl.set(worksContainer, { autoAlpha: 1 });
-      tl.from(worksContainer, 1.5, {
-        xPercent: -100,
-        ease: "power2.out",
-      });
-      tl.from(image, 1.5, {
-        xPercent: 100,
-        scale: 1.3,
-        delay: -1.5,
-        ease: "power2.out",
-      });
+
+      // Adjusting fromTo animation for smoother effect
+      tl.fromTo(
+        worksContainer,
+        { xPercent: -100 },
+        {
+          xPercent: 0,
+          duration: 1.2, // Reduced duration for quicker animation
+          ease: "power3.out", // Smoother easing function
+        }
+      );
+
+      tl.fromTo(
+        image,
+        { xPercent: 100, scale: 1.3 },
+        {
+          xPercent: 0,
+          scale: 1,
+          duration: 1.2, // Reduced duration to match worksContainer
+          delay: -1.2, // Adjust delay to overlap with previous animation
+          ease: "power3.out", // Smoother easing function
+        }
+      );
     });
   }, []);
 
@@ -45,7 +58,7 @@ const WorkSection = () => {
   };
 
   return (
-    <div className="wrap">
+    <div className="Workwrap">
       <div
         style={{ paddingTop: "3em", paddingBottom: "3em" }}
         className="WorkHeadingContainer"
@@ -66,53 +79,3 @@ const WorkSection = () => {
 };
 
 export default WorkSection;
-
-
-// .workFirstRow,
-// .workSecondRow {
-//   display: flex;
-//   justify-content: space-around;
-//   padding-bottom: 5em;
-//   gap: 10em;
-// }
-// .worksContianer img {
-//   width: 34em;
-//   height: 36vh;
-//   display: block;
-//   object-fit: cover;
-// }
-
-// @media screen and (max-width: 1024px) {
-//   .worksContianer img {
-//     height: 11vh;
-//   }
-// }
-// @media screen and (max-width: 500px) {
-//   .worksContianer img {
-//     height: 6vh;
-//   }
-//   .workFirstRow,
-//   .workSecondRow {
-//     gap: 1.2em;
-//     padding-top: 0.1em;
-//     padding-bottom: 1em;
-
-//     padding-right: 30px;
-//   }
-// }
-// .workMainContainer {
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   gap: 10px; /* Adjust the gap between images as needed */
-//   max-width: 800px; /* Adjust the max-width to your needs */
-//   margin: 0 auto;
-//   padding: 20px;
-// }
-
-// .reveal {
-//   position: relative;
-//   overflow: hidden;
-// }
